@@ -1,25 +1,21 @@
 <script>
-import { apiCall } from '../services/apiCall';
+import { favList } from '../store/favList';
 import HeroCard from '../components/HeroCard.vue';
+import { mapState } from 'pinia';
 
 export default {
-  data() {
-    return {
-      superheroeList: null,
-    };
+  computed: {
+    ...mapState(favList, ['list']),
   },
   components: { HeroCard },
-  async created() {
-    this.superheroeList = await apiCall();
-  },
 };
 </script>
 
 <template>
-  <h1>Home</h1>
-  <main class="home">
+  <h1>Superfavoritos</h1>
+  <main class="fav">
     <HeroCard
-      v-for="superheroe in superheroeList"
+      v-for="superheroe in this.list"
       :key="superheroe.id"
       :hero="superheroe"
     />
@@ -27,7 +23,7 @@ export default {
 </template>
 
 <style>
-.home {
+.fav {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(3, 1fr);
