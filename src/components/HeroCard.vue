@@ -82,6 +82,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   margin: auto;
+  margin-top:20px;
 }
 
 .left-box {

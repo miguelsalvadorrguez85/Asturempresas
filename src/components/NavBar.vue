@@ -16,12 +16,7 @@ export default {
 </script>
 
 <template>
-  <nav>
-    <RouterLink v-if="getCurrentPath() == '/'" to="/favourites"
-      >FAVORITOS</RouterLink
-    >
-    <RouterLink v-else to="/">HOME</RouterLink>
-  </nav>
+  <h1>ASTUREMPRESAS</h1>
 </template>
 
 <style>
@@ -33,7 +28,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  font-family: Badaboom BB;
   font-size: 48px;
   letter-spacing: 2px;
   color: var(--yellow);

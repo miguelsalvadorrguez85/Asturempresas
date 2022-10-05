@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.vue';
 <template>
   <header>
     <div class="wrapper">
-      <img src="./assets/img/logo-superpowers.png" alt="logo" />
+      
       <NavBar />
     </div>
   </header>
@@ -20,7 +20,7 @@ import NavBar from './components/NavBar.vue';
 @import '@/assets/base.css';
 
 header {
-  background-color: var(--red);
+  background-color: var(--blue);
   width: 100vw;
   min-height: 20px;
   padding: 0 35px;
@@ -35,7 +35,7 @@ header {
   height: 55px;
 }
 .footer {
-  background-color: var(--red);
+  background-color: var(--blue);
   height: 71px;
   font-family: Kdam Thmor Pro, Arial, Helvetica, sans-serif;
   color: var(--white);
