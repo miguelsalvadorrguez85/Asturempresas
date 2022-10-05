@@ -20,7 +20,7 @@ import NavBar from './components/NavBar.vue';
 @import '@/assets/base.css';
 
 header {
-  background-color: var(--blue);
+  background-image: linear-gradient(to right, #3388bb 0%, #365983 100%);
   width: 100vw;
   min-height: 20px;
   padding: 0 35px;
@@ -35,7 +35,7 @@ header {
   height: 55px;
 }
 .footer {
-  background-color: var(--blue);
+  background-color: linear-gradient(to right, #3388bb 0%, #365983 100%);
   height: 71px;
   font-family: Kdam Thmor Pro, Arial, Helvetica, sans-serif;
   color: var(--white);
