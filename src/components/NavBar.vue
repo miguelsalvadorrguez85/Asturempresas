@@ -16,7 +16,6 @@ export default {
 </script>
 
 <template>
-  <h1>ASTUREMPRESAS</h1>
 </template>
 
 <style>

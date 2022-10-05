@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.vue';
 <template>
   <header>
     <div class="wrapper">
-      
+      <img src="./assets/img/logo.png" alt="logo" /> 
       <NavBar />
     </div>
   </header>
@@ -27,12 +27,12 @@ header {
 }
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .wrapper > img {
-  height: 55px;
+  height: 100px;
 }
 .footer {
   background-color: linear-gradient(to right, #3388bb 0%, #365983 100%);
