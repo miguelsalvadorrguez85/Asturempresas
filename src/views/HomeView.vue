@@ -1,6 +1,6 @@
 <script>
 import { apiCall } from '../services/apiCall';
-import HeroCard from '../components/HeroCard.vue';
+import CompanyCard from '../components/CompanyCard.vue';
 
 export default {
   data() {
@@ -8,7 +8,7 @@ export default {
       superheroeList: null,
     };
   },
-  components: { HeroCard },
+  components: { CompanyCard },
   async created() {
     this.superheroeList = await apiCall();
   },
@@ -18,7 +18,7 @@ export default {
 <template>
   
   <main class="home">
-    <HeroCard
+    <CompanyCard
       v-for="superheroe in superheroeList"
       :key="superheroe.id"
       :hero="superheroe"
