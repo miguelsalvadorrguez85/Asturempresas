@@ -22,32 +22,17 @@ export default {
     <div class="right-box">
       <ul class="info-list">
         <h2>{{ hero.name }}</h2>
-        <li>Nombre real:</li>
-        <span class="info">{{ hero.biography.fullName }}</span>
-        <p class="separated">Estadísticas:</p>
         <li>
-          Inteligencia:
+          Nº de empleados: 
           <span class="info">{{ hero.powerstats.intelligence }}</span>
         </li>
         <li>
-          Fuerza:
-          <span class="info">{{ hero.powerstats.strength }}</span>
+          Facturación:
+          <span class="info">{{ hero.powerstats.strength }} millones €</span>
         </li>
         <li>
           Velocidad:
           <span class="info">{{ hero.powerstats.speed }}</span>
-        </li>
-        <li>
-          Durabilidad:
-          <span class="info">{{ hero.powerstats.durability }}</span>
-        </li>
-        <li>
-          Poder:
-          <span class="info">{{ hero.powerstats.power }}</span>
-        </li>
-        <li>
-          Combate:
-          <span class="info">{{ hero.powerstats.combat }}</span>
         </li>
       </ul>
     
@@ -59,13 +44,14 @@ export default {
 .card {
   width: 406px;
   height: 281px;
-  background-color: var(--navy);
+  background-color: white;
   border-radius: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: auto;
   margin-top:20px;
+  border: 3px solid grey;
 }
 
 .left-box {
@@ -100,6 +86,7 @@ li {
 h2 {
   color: var(--text);
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -111,7 +98,7 @@ p {
 }
 
 .info {
-  color: var(--info);
+  color: #3d423e;
 }
 
 .left-box-fav {
