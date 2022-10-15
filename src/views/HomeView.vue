@@ -17,7 +17,11 @@ export default {
 
 <template>
   
+  <button>Añadir empresa +</button>
+
   <main class="home">
+    
+
     <CompanyCard
       v-for="superheroe in superheroeList"
       :key="superheroe.id"
@@ -31,5 +35,12 @@ export default {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+  min-height: 10px;
 }
 </style>

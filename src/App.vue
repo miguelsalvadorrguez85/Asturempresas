@@ -12,7 +12,6 @@ import NavBar from './components/NavBar.vue';
   </header>
   <RouterView />
   <footer>
-    <p class="footer">&copy; Crazy House Team 2022</p>
   </footer>
 </template>
 
